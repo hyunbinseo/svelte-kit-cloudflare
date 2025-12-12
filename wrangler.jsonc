@@ -1,0 +1,13 @@
+{
+	"$schema": "./node_modules/wrangler/config-schema.json", // Added
+	"name": "svelte-kit-cloudflare",
+	"main": ".svelte-kit/cloudflare/_worker.js",
+	// NOTE When you start your project, you should always set compatibility_date to the current date.
+	// See developers.cloudflare.com/workers/configuration/compatibility-dates/#setting-compatibility-date
+	"compatibility_flags": ["nodejs_compat"], // Added
+	"compatibility_date": "2025-12-12", // Updated
+	"assets": {
+		"binding": "ASSETS",
+		"directory": ".svelte-kit/cloudflare",
+	},
+}
